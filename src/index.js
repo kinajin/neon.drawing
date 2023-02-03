@@ -22,7 +22,6 @@ canvas.width = CANVAS_WIDTH;
 canvas.height = CANVAS_HEIGHT;
 ctx.lineWidth = lineWidth.value;
 
-//
 //추가내용
 let fontSize = 50;
 
@@ -61,6 +60,7 @@ function onColorChange(event) {
 function onColorClick(event) {
   let colorValue = event.target.dataset.color;
   // ctx.strokeStyle = colorValue;
+  ctx.strokeStyle = "rgb(255, 255, 255, 0.1)";
   ctx.fillStyle = colorValue;
   //추가내용
   ctx.shadowColor = colorValue;
@@ -102,6 +102,7 @@ function onDestroyClick() {
 
 function onEraserClick() {
   ctx.strokeStyle = "black";
+  ctx.shadowColor = "black";
   isFilling = false;
   modeBtn.innerText = "Fill";
 }
