@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Maker</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="color-options">
+      <input type="color" id="color" value="#ff1178" />
+      <div
+        class="color-option"
+        style="background-color: #ff1178"
+        data-color="#ff1178"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #fe0000"
+        data-color="#fe0000"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #ff9900"
+        data-color="#ff9900"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #fff205"
+        data-color="#fff205"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #7cff01"
+        data-color="#7cff01"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #00ffc8"
+        data-color="#00ffc8"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #00d9ff"
+        data-color="#00d9ff"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #0051ff"
+        data-color="#0051ff"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #9500ff"
+        data-color="#9500ff"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #ff00cc"
+        data-color="#ff00cc"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #acacac"
+        data-color="#acacac"
+      ></div>
+    </div>
+
+    <div class="mid_div">
+      <span class="title">NEON DRAWING</span>
+      <canvas></canvas>
+    </div>
+
+    <div class="btns">
+      <span>Stroke Size</span>
+      <input
+        id="line-width"
+        type="range"
+        min="1"
+        max="10"
+        value="5"
+        step="0.1"
+      />
+      <button id="mode-btn">🩸 Fill</button>
+      <button id="destroy-btn">💣 Destroy</button>
+      <button id="eraser-btn">❌ Erase</button>
+      <label for="file">
+        💅🏻 Add Photo
+        <input type="file" accept="image/*" id="file"
+      /></label>
+      <input type="text" id="text" placeholder="Add text here... :)" />
+      <button id="save">🖼 Save image</button>
+      <span>Font Size</span>
+
+      <input
+        id="font-range"
+        type="range"
+        min="10"
+        max="100"
+        value="50"
+        step="1"
+      />
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
